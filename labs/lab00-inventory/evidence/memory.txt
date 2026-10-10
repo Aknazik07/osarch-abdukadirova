@@ -1,0 +1,10 @@
+
+
+
+
+  Capacity Speed Manufacturer PartNumber          
+  -------- ----- ------------ ----------          
+4294967296  2400 Samsung                          
+4294967296  2400 Samsung                          
+
+
