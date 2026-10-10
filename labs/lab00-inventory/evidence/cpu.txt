@@ -1,0 +1,9 @@
+
+Name                                    NumberOfCores NumberOfLogicalProcessors
+----                                    ------------- -------------------------
+Intel(R) Celeron(R) N4120 CPU @ 1.10GHz             4                         4
+
+
+
+
+
