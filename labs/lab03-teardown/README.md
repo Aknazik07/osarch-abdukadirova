@@ -24,3 +24,12 @@
   * What: Side-mounted input/output interface ports (USB, HDMI, audio jack, Ethernet RJ-45, DC-in)
   * Connects to: Main system board via flexible flat ribbon cables (FPC) and dedicated traces
   * Limits: Transfer speeds and electrical ratings are bound by controller specifications (e.g., USB 3.2 Gen 1 up to 5 Gbps)
+  * ## 5. The Upgrade Verdict
+
+## 5. The Upgrade Verdict
+
+| Component | Manual says | OS says | Verdict |
+| :--- | :--- | :--- | :--- |
+| Memory | 8 GB soldered + 1 SO-DIMM slot, max 40 GB | 2 devices, 1 SO-DIMM, MaxCapacity 64 GB | Partly: One free slot, upgradeable up to 32/40 GB (manual limit takes precedence over firmware table limits). |
+| Storage | 1 x M.2 2280, PCIe NVMe | BusType: NVMe | Yes: Fully upgradeable to any compatible 2280 NVMe drive. |
+| CPU | Part of the system board | SocketDesignation: BGA1744 | No: Soldered directly to the motherboard, non-replaceable. |
