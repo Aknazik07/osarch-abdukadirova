@@ -1,3 +1,5 @@
+##1. * Model: Acer TravelMate Spin B3 (B311RN-31)
+* Manual Link: [Acer TravelMate Spin B3 B311RN-31 PDF Document](https://manual-hub.com/manuals/acer-travelmate-spin-b3-b311rn-31-01-pdf-manual/)
 ## 2. Components
 
 1. CPU and Heatsink (Processor Zone)
