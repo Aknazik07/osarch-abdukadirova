@@ -1,0 +1,6 @@
+Manufacturer: Acer
+Model: TravelMate Spin B118-G2-R
+System Board (BaseBoard): Virgo_GL (V1.24)
+Logical Processors: 4
+Total Physical Memory (RAM): 8382689280 bytes (~8 GB)
+Storage Drive: SanDisk DA4128
