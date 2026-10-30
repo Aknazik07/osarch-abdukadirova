@@ -33,3 +33,14 @@
 | Memory | 8 GB soldered + 1 SO-DIMM slot, max 40 GB | 2 devices, 1 SO-DIMM, MaxCapacity 64 GB | Partly: One free slot, upgradeable up to 32/40 GB (manual limit takes precedence over firmware table limits). |
 | Storage | 1 x M.2 2280, PCIe NVMe | BusType: NVMe | Yes: Fully upgradeable to any compatible 2280 NVMe drive. |
 | CPU | Part of the system board | SocketDesignation: BGA1744 | No: Soldered directly to the motherboard, non-replaceable. |
+## 8. The comparison table
+
+| Fact | Windows | Linux (VM) |
+| :--- | :--- | :--- |
+| Logical CPUs | Get-CimInstance Win32_Processor -> NumberOfLogicalProcessors = 8 | lscpu -> CPU(s) = 8 (or VM allocation) |
+| Total memory | Get-CimInstance Win32_ComputerSystem -> TotalPhysicalMemory = ~8 GB | free -h -> total ~ 7.6 GB |
+| Disk interface | Get-PhysicalDisk -> BusType = NVMe | lsblk -> TRAN = nvme |
+
+* Analysis: 
+  * Naming differences: Windows queries rely on WMI/CIM classes and properties (such as Win32_Processor), whereas Linux utilizes command-line utilities and virtual filesystems (such as lscpu and free).
+  * Values & Host vs VM: The hardware metrics match closely because they describe the underlying physical capabilities of the Acer TravelMate machine, though minor variations in total memory appear due to system reservations and hypervisor memory management.
