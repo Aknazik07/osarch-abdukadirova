@@ -24,7 +24,7 @@
   * What: Side-mounted input/output interface ports (USB, HDMI, audio jack, Ethernet RJ-45, DC-in)
   * Connects to: Main system board via flexible flat ribbon cables (FPC) and dedicated traces
   * Limits: Transfer speeds and electrical ratings are bound by controller specifications (e.g., USB 3.2 Gen 1 up to 5 Gbps)
-  * ## 5. The Upgrade Verdict
+  
 
 ## 5. The Upgrade Verdict
 
