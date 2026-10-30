@@ -1,0 +1,6 @@
+OS: Ubuntu 26.04.1 LTS
+System Manufacturer: VirtualBox
+Processor: Intel(R) Celeron(R) N4120 CPU @ 1.10GHz
+Memory (RAM): 1.6Gi
+Storage (sda): 25G
+IPv4 Address: 10.0.2.3
