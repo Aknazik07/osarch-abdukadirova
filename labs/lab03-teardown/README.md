@@ -1,1 +1,26 @@
+## 2. Components
 
+* 1. CPU and Heatsink (Processor Zone)
+  * What: Motherboard CPU zone covered by a copper heatsink shield, housing the soldered processor.
+  * Connects to: Power delivery circuits, internal buses, and system board architecture
+  * Limits: CPU is permanently soldered (BGA) and non-upgradeable; passive cooling solution without a dedicated fan.
+
+* 2. M.2 SSD Slot / Storage
+  * What: M.2 expansion slot containing a solid-state drive (Kingston 128GB)
+  * Connects to: PCIe / SATA controller on the motherboard
+  * Limits: Supports M.2 NVMe / SATA form factor (typically 2280 size key); fully upgradeable and replaceable.
+
+* 3. Wi-Fi Module
+  * What: Wireless communication card for Wi-Fi and Bluetooth connectivity (M.2 2230 format)
+  * Connects to: Small M.2 slot (A/E key) on the motherboard and internal antenna cables
+  * Limits: Compatible with standard wireless card form factors; upgradeable.
+
+* 4. Main Battery
+  * What: Rechargeable Li-ion battery pack, model Acer AP18C8K (3INPS/82/70), 11.25V, 4343 mAh / 48.85 Wh
+  * Connects to: Dedicated multi-pin power connector on the system board
+  * Limits: Removable and replaceable component designed for specific voltage and capacity thresholds
+
+* 5. I/O Ports and Daughterboard
+  * What: Side-mounted input/output interface ports (USB, HDMI, audio jack, Ethernet RJ-45, DC-in)
+  * Connects to: Main system board via flexible flat ribbon cables (FPC) and dedicated traces
+  * Limits: Transfer speeds and electrical ratings are bound by controller specifications (e.g., USB 3.2 Gen 1 up to 5 Gbps)
