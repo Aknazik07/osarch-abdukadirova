@@ -17,8 +17,8 @@ Instead of asking the office manager technical questions, I assumed standard saf
 2. Created a new virtual machine named 'ubuntu-server-lab1' and allocated 2 GB of RAM and 25 GB of dynamically allocated virtual storage, balancing performance with the host's 8 GB physical memory limit.
 3. Configured the VM network adapter in NAT mode during initial creation to provide secure internet access while keeping the host isolated.
 4. Attached the Ubuntu Server ISO image and performed a clean installation of the operating system with active internet connectivity:
-   -In VirtualBox, go to Settings > Storage. Under the Optical Drive controller, select Choose a disk file and attach the downloaded Ubuntu Server ISO image.
-   -Reasoning: This mounts the operating system installer into the VM's virtual CD/DVD drive so the system can boot from it and start the installation process.
+    -In VirtualBox, go to Settings > Storage. Under the Optical Drive controller, select Choose a disk file and attach the downloaded Ubuntu Server ISO image.
+    -Reasoning: This mounts the operating system installer into the VM's virtual CD/DVD drive so the system can boot from it and start the installation process.
 5. Logged into the guest OS and verified system parameters (RAM, disk size) and network connectivity using command-line tools (free -h, df -h, lsblk, ip addr).
 ## 5. What I would do differently
 
