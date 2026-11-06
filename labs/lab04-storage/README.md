@@ -30,7 +30,7 @@ sdc       8:32   0    2G  0 disk
 sdd       8:48   0    2G  0 disk 
 └─sdd1    8:49   0    2G  0 part 
   └─md0   9:0    0    2G  0 raid1 /mnt/raid1
-sr0      11:0    1 1024M  0 rom  
+sr0      11:0    1 1024M  0 rom
 
 | Role | Device |
 |------|--------|
