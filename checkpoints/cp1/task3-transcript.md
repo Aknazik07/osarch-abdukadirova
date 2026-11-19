@@ -9,7 +9,7 @@
 <1-2 sentences stating what is wrong and which exact evidence files prove it.>
 
 ### Fix
-<exact commands to run on office-srv in order>
+<exact commands to run on office-srv in order >
 
 ### Verification
 <verification commands, expected output, and reboot persistence check>
