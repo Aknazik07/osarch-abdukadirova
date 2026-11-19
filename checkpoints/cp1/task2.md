@@ -35,3 +35,9 @@ Initial diagnostic tests involving ICMP echo requests (ping) from the Ubuntu Ser
 Host Memory Overcommitment Experiment The second phase of the laboratory focused on analyzing host resource constraints. The host computer is equipped with 8.0 GB of physical DDR4 RAM (approximately 7.8 GB usable). An experimental load was introduced by simultaneously allocating 4.0 GB of RAM to both the Ubuntu and Windows virtual machines, creating a scenario where the combined guest demands equaled the total physical capacity of the host.
 
 Under normal baseline conditions (host-memory-before.png), the host operating system utilized approximately 4.0 GB (51%) of its physical memory. However, under peak experimental load (host-memory-after.png), physical RAM utilization surged to 7.1 GB (91%), and the total committed virtual memory expanded to 11.0 out of 11.6 GB. This metric demonstrates that the Windows host successfully prevented out-of-memory crashes by dynamically expanding its paging file (swap space) onto the secondary SSD storage. Once the virtual machine allocations were reduced back to standard operating parameters (host-memory-returned.png), host memory usage safely normalized to approximately 2.5 GB (32%). In summary, Laboratory Work 2 successfully demonstrated the practical implementation of virtual networking topologies and highlighted the critical importance of host resource management, paging mechanisms, and firewall configurations in virtualized environments. All required configuration logs and empirical evidence have been compiled and structured within the repository's evidence.
+free -h
+total        used        free      shared  buff/cache   available
+Mem:         1.6Gi       335Mi       1.1Gi       1.0Mi       357Mi       1.3Gi
+Swap:           0B          0B          0B
+uname -a
+Linux ubuntu-server-lab1 7.0.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 4 09:10:14 UTC 2026 x86_64 GNU/Linux
