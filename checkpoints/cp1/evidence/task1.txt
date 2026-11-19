@@ -1,1 +1,10 @@
-
+Name                                    NumberOfCores NumberOfLogicalProcessors
+----                                    ------------- -------------------------
+Intel(R) Celeron(R) N4120 CPU @ 1.10GHz             4                         4
+Model                  Size MediaType            
+-----                  ---- ---------            
+SanDisk DA4128 125065382400 Fixed hard disk media
+  Capacity Speed Manufacturer PartNumber          
+  -------- ----- ------------ ----------          
+4294967296  2400 Samsung                          
+4294967296  2400 Samsung       
