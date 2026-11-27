@@ -1,1 +1,21 @@
+text
+[Fri Nov 27 17:11:28 2026] audit: type=1400 audit(...): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.hwctl" pid=4593 comm="apparmor_parser"
+[Fri Nov 27 17:13:27 2026] audit: type=1400 audit(...): apparmor="AUDIT" operation="userns_create" class="namespace" info="Userns create - transitioning profile" profile="unconfined" pid=4960 comm="(ubuntu-insigh)" requested="userns_create" target="unprivileged_userns" execpath="/usr/lib/systemd/systemd-executor"
+[Fri Nov 27 17:13:27 2026] audit: type=1400 audit(...): apparmor="DENIED" operation="capable" class="cap" profile="unprivileged_userns" pid=4960 comm="(ubuntu-insigh)" capability=21 capname="sys_admin"
+[Fri Nov 27 17:17:55 2026] audit: type=1400 audit(...): apparmor="DENIED" operation="open" class="file" profile="/usr/sbin/cupsd" name="/etc/paperspecs" pid=5357 comm="cupsd" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[Fri Nov 27 17:17:55 2026] audit: type=1400 audit(...): apparmor="DENIED" operation="capable" class="cap" profile="/usr/sbin/cupsd" pid=5357 comm="cupsd" capability=12 capname="net_admin"
+[Fri Nov 27 17:33:30 2026] workqueue: psi_avgs_work hogged CPU for >20000us 7 times, consider switching to WQ_UNBOUND
+[Fri Nov 27 17:49:18 2026] workqueue: css_release_work_fn hogged CPU for >20000us 4 times, consider switching to WQ_UNBOUND
+[Fri Nov 27 17:49:18 2026] workqueue: css_release_work_fn hogged CPU for >20000us 5 times, consider switching to WQ_UNBOUND
+[Fri Nov 27 17:49:23 2026] workqueue: blk_mq_run_work_fn hogged CPU for >20000us 4 times, consider switching to WQ_UNBOUND
+[Fri Nov 27 17:49:24 2026] workqueue: blk_mq_run_work_fn hogged CPU for >20000us 5 times, consider switching to WQ_UNBOUND
+[Fri Nov 27 17:49:26 2026] workqueue: blk_mq_run_work_fn hogged CPU for >20000us 7 times, consider switching to WQ_UNBOUND
 
+--- Related memory / swap / OOM checks (dmesg & journalctl -u systemd-oomd) ---
+[Fri Nov 27 17:05:26 2026] Memory: 3303664K/4144564K available (23912K kernel code, 4961K rwdata, 16720K rodata, 5316K init, 5024K bss, 810016K reserved, 0K cma-reserved)
+[Fri Nov 27 17:05:32 2026] systemd[1]: Reached target swap.target - Swaps.
+[Fri Nov 27 17:05:42 2026] systemd[1]: Listening on systemd-oomd.socket - Userspace Out-Of-Memory (OOM) Killer Socket.
+[Fri Nov 27 17:05:42 2026] Adding 3445756k swap on /swap.img.  Priority:-1 extents:20 across:20015072k
+Nov 27 17:05:43 aknazik-VMware-Virtual-Platform systemd[1]: Starting systemd-oomd.service - Userspace Out-Of-Memory (OOM) Killer...
+Nov 27 17:05:44 aknazik-VMware-Virtual-Platform systemd[1]: Started systemd-oomd.service - Userspace Out-Of-Memory (OOM) Killer.
+(No OOM killer process termination messages recorded during the memory test.)
