@@ -1,14 +1,14 @@
 ## Three-Tool Comparison & Where They Disagreed
 
-### Setup & Observed Tools
+### Setup and Observed Tools
 - **htop (evidence/htop.png):** Run inside the Ubuntu 64-bit guest virtual machine (aknazik@aknazik-VMware-Virtual-Platform, 3.2Gi guest RAM, 3.3Gi swap) running under VMware Workstation.
 - **Windows Task Manager (evidence/task-manager.png):** Run on the Windows 11 host system (aknazik), showing host OS processes, CPU/memory/disk/network utilization, and background/Windows processes.
 - **Process Explorer (evidence/process-explorer.png):** Run on the Windows 11 host system (aknazik), providing a hierarchical parent–child process tree, detailed memory columns, and deep inspection of open handles and loaded DLLs.
 
 ### How They Inspect a Process (PID, Parent, Memory & Handles/FDs)
-- PID & Parent Relationship: Each tool exposes process identity and hierarchy differently. htop displays Linux PID and can display PPID / tree view (F5 / tree mode) for tasks inside the Ubuntu guest. Windows Task Manager groups processes into categories (Apps, Background processes, Windows processes) with less emphasis on raw parent–child lineage, whereas Process Explorer explicitly renders parent–child indentation and process ancestry on the Windows host.
+- PID and Parent Relationship: Each tool exposes process identity and hierarchy differently. htop displays Linux PID and can display PPID / tree view (F5 / tree mode) for tasks inside the Ubuntu guest. Windows Task Manager groups processes into categories (Apps, Background processes, Windows processes) with less emphasis on raw parent–child lineage, whereas Process Explorer explicitly renders parent–child indentation and process ancestry on the Windows host.
 - Memory Figures: In htop (Linux), memory accounting distinguishes used memory, free memory, and reclaimable buff/cache / available memory alongside swap. In Windows Task Manager and Process Explorer, memory is reported using Windows concepts such as Working Set / memory usage, private/committed memory, and overall host RAM commit/usage.
-- Open Handles vs. File Descriptors: Linux tracks open files, sockets, and pipes per process as file descriptors (FDs) (visible via /proc/<PID>/fd or lsof, rather than as a default column in htop), whereas Windows tracks kernel object references (files, registry keys, mutexes, events, sections) as handles, which Process Explorer directly inspects and lists in its lower handle/DLL pane.
+- Open Handles verses File Descriptors: Linux tracks open files, sockets, and pipes per process as file descriptors (FDs) (visible via /proc/<PID>/fd or lsof, rather than as a default column in htop), whereas Windows tracks kernel object references (files, registry keys, mutexes, events, sections) as handles, which Process Explorer directly inspects and lists in its lower handle/DLL pane.
 
 ### Where They Agreed
 - Normal Baseline Behavior: All three views reflect a system operating under normal conditions without runaway CPU saturation or memory exhaustion during baseline monitoring.
